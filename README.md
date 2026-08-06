@@ -2,6 +2,16 @@
 
 A text encryption/decryption tool built around a 10×10 coordinate code table. Every character maps to a two-digit coordinate code `xy` (x = row, y = column) — an extended take on the Polybius square, with digits and common punctuation squeezed into the table as well.
 
+## Build
+
+You need Go 1.26.5 or newer. From the project directory:
+
+```bash
+go build .
+```
+
+This produces a single executable named `mapcipher` in the current directory. If you just want to try it out without building, `go run .` compiles and runs in one step — the commands below work either way.
+
 ## Usage
 
 ```bash
@@ -11,6 +21,8 @@ go run . encrypt <file>
 # Decrypt: restore the original text from the codes, write the result to <file>.txt
 go run . decrypt <file>.enc
 ```
+
+Once built, you can swap `go run .` for `./mapcipher`, e.g. `./mapcipher encrypt <file>`.
 
 Example:
 
