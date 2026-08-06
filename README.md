@@ -10,7 +10,7 @@ You need Go 1.26.5 or newer. From the project directory:
 go build .
 ```
 
-This produces a single executable named `mapcrypto` in the current directory. If you just want to try it out without building, `go run .` compiles and runs in one step — the commands below work either way.
+This produces a single executable named `mapcrypt` in the current directory. If you just want to try it out without building, `go run .` compiles and runs in one step — the commands below work either way.
 
 ## Usage
 
@@ -22,7 +22,7 @@ go run . encrypt <file>
 go run . decrypt <file>.enc
 ```
 
-Once built, you can swap `go run .` for `./mapcrypto`, e.g. `./mapcrypto encrypt <file>`.
+Once built, you can swap `go run .` for `./mapcrypt`, e.g. `./mapcrypt encrypt <file>`.
 
 Example:
 
